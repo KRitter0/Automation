@@ -210,7 +210,7 @@ function ServicesSection() {
         {services.map((service, index) => (
           <Card
             key={index}
-            className="group bg-white/5 border-white/10 hover:border-[#D4AF37]/50 transition-all duration-300 hover:shadow-lg hover:shadow-[#D4AF37]/20 backdrop-blur-sm p-6"
+            className="group hover-lift hover-glow bg-white/5 border-white/10 hover:border-[#D4AF37]/50 transition-all duration-300 backdrop-blur-sm p-6"
           >
             <div className="w-12 h-12 bg-gradient-to-br from-[#D4AF37]/20 to-[#FFEB3B]/20 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <service.icon className="w-6 h-6 text-[#D4AF37]" />
@@ -274,7 +274,7 @@ function TechStackSection() {
         {technologies.map((tech, index) => (
           <Card
             key={index}
-            className="bg-white/5 border-white/10 hover:border-[#D4AF37]/50 transition-all duration-300 p-6 text-center group hover:scale-105"
+            className="hover-lift hover-glow bg-white/5 border-white/10 hover:border-[#D4AF37]/50 transition-all duration-300 p-6 text-center group"
           >
             <Cpu className="w-8 h-8 text-[#D4AF37] mx-auto mb-3 group-hover:rotate-180 transition-transform duration-500" />
             <div className="font-bold text-white mb-1">{tech.name}</div>
@@ -327,7 +327,7 @@ function ProcessSection() {
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {steps.map((step, index) => (
           <div key={index} className="relative">
-            <Card className="relative bg-white/5 border-white/10 hover:border-[#D4AF37]/50 transition-all duration-300 p-6 h-full">
+            <Card className="hover-lift hover-glow relative bg-white/5 border-white/10 hover:border-[#D4AF37]/50 transition-all duration-300 p-6 h-full">
               <div className="w-12 h-12 bg-gradient-to-br from-[#D4AF37] to-[#FFEB3B] rounded-full flex items-center justify-center mb-4 text-xl font-bold text-[#0A0A0A]">
                 {index + 1}
               </div>
@@ -375,22 +375,22 @@ function StatsSection() {
     <section className="container mx-auto px-6 py-24">
       <div className="bg-[#1a1a1a] border border-white/10 rounded-lg p-16">
         <div className="grid md:grid-cols-4 gap-12 text-center">
-          <div className="group p-6 rounded-lg transition-all duration-300 hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] hover:bg-[#D4AF37]/5">
+          <div className="group hover-lift hover-glow p-6 rounded-lg transition-all duration-300 hover:bg-[#D4AF37]/5">
             <LightningIcon />
             <div className="text-5xl font-bold text-[#D4AF37] mb-3">10x</div>
             <div className="text-white/60 text-sm">Productivity Increase</div>
           </div>
-          <div className="group p-6 rounded-lg transition-all duration-300 hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] hover:bg-[#D4AF37]/5">
+          <div className="group hover-lift hover-glow p-6 rounded-lg transition-all duration-300 hover:bg-[#D4AF37]/5">
             <TargetIcon />
             <div className="text-5xl font-bold text-[#D4AF37] mb-3">85%</div>
             <div className="text-white/60 text-sm">Cost Reduction</div>
           </div>
-          <div className="group p-6 rounded-lg transition-all duration-300 hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] hover:bg-[#D4AF37]/5">
+          <div className="group hover-lift hover-glow p-6 rounded-lg transition-all duration-300 hover:bg-[#D4AF37]/5">
             <RocketIcon />
             <div className="text-5xl font-bold text-[#D4AF37] mb-3">7 days</div>
             <div className="text-white/60 text-sm">Average Deployment</div>
           </div>
-          <div className="group p-6 rounded-lg transition-all duration-300 hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] hover:bg-[#D4AF37]/5">
+          <div className="group hover-lift hover-glow p-6 rounded-lg transition-all duration-300 hover:bg-[#D4AF37]/5">
             <GrowthIcon />
             <div className="text-5xl font-bold text-[#D4AF37] mb-3">250%</div>
             <div className="text-white/60 text-sm">ROI Average</div>
@@ -404,7 +404,7 @@ function StatsSection() {
 function CTASection() {
   return (
     <section className="container mx-auto px-6 py-24">
-      <Card className="bg-[#1a1a1a] border border-white/10 rounded-lg p-16 p-12 text-center">
+      <Card className="hover-lift hover-glow bg-[#1a1a1a] border border-white/10 rounded-lg p-16 p-12 text-center transition-all duration-300">
         <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
         <div className="relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#D4AF37]">
